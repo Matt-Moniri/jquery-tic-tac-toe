@@ -1,0 +1,115 @@
+:root {
+  --color1: #235937ff;
+  --color2: #f2ae01ff;
+  --colorDark: #002664ff;
+  --text1: #d3f9b5ff;
+  --text2: #f7f0f5ff;
+  --alertBack: #88292F;
+  --alertText: #F5F5F5;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+}
+
+.hidden {
+  display: none;
+}
+
+#contents {
+  hheight: 90vh;
+}
+
+#header {
+  height: 15vh;
+  background-color: var(--color2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#header #logo {
+  width: 40vh;
+  height: 14vh;
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#main {
+  hheight: 65vh;
+  background-color: var(--color1);
+  color: var(--text1);
+  ddisplay: flex;
+  fflex-flow: row nowrap;
+  justify-content: center;
+  aalign-items: center;
+  ppadding: 1em;
+}
+
+#bigPopUp {
+  background-color: #88292F;
+  color: var(--alertText);
+  text-align: center;
+  height: 20vh;
+  font-size: 5vh;
+  opacity: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+#bigPopUp button {
+  font-size: inherit;
+  cursor: pointer;
+  display: inline-block;
+  WIDTH: 7EM;
+}
+
+#bigPopUp p {
+  margin: 0;
+}
+
+.gameCell {
+  bborder: 1px solid var(--text1);
+  text-align: center;
+  line-height: 2em;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.gameCell+.gameCell {
+  border-left: 1px solid var(--text1);
+}
+
+
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.row+.row .gameCell {
+  border-top: 1px solid var(--text1);
+}
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
